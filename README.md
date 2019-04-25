@@ -1,8 +1,15 @@
 # calculator
 I have created the calculator app based on the example of Bart. 
 
-## Step 1
-Created the app in **Ionic**.
+## How does the app work
+The app can be used for calculating things. The default functions for an calculator are available. 
 
-## Step 2
-Deployed this on my *device*. 
+## Used technique
+The app is build in Ionic. Ionic is build over the Angular webframework. 
+
+## Install
+Step 1: clone this repo with Git. 
+Step 2: generate the app on your device by using two commands:
+
+- Ios: `cordova run ios`
+- Android: `cordova run android`
