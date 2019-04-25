@@ -5,22 +5,7 @@
     </ion-title>
   </ion-toolbar>
 </ion-header>
-<style>
-  ion-button{
-    width: 100%;
-  }
-  .display{
-    width: 100%;
-    text-align:right; 
-    padding:10px;
-    background-color: #e0e0e0;
-    color: #488aff;
-  }
-  .errorMessage{
-    color:red;
-    font-weight: bold; 
-  }
-</style>
+
 <ion-content>
 
   <div class="errorMessage" *ngIf="errorMessage">{{errorMessage}}</div>
