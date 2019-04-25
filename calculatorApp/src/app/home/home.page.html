@@ -28,38 +28,38 @@
 
   <ion-grid>
       <ion-row>
-          <ion-col><ion-button (click)="touchUnOp($event)">Rand</ion-button></ion-col>
-          <ion-col><ion-button (click)="allClear()">AC</ion-button></ion-col>
-          <ion-col><ion-button (click)="touchUnOp($event)">+/-</ion-button></ion-col>
-          <ion-col><ion-button (click)="touchUnOp($event)">%</ion-button></ion-col>
-          <ion-col><ion-button (click)="touchBinOp($event)">+</ion-button></ion-col>
+          <ion-col><ion-button (click)="touchUnOp($event)" color="medium">Rand</ion-button></ion-col>
+          <ion-col><ion-button (click)="allClear()" color="medium">AC</ion-button></ion-col>
+          <ion-col><ion-button (click)="touchUnOp($event)" color="medium">+/-</ion-button></ion-col>
+          <ion-col><ion-button (click)="touchUnOp($event)" color="medium">%</ion-button></ion-col>
+          <ion-col><ion-button (click)="touchBinOp($event)" color="warning tint">+</ion-button></ion-col>
       </ion-row>
       <ion-row>
-          <ion-col><ion-button (click)="touchUnOp($event)">√</ion-button></ion-col>
-          <ion-col><ion-button (click)="touchDigit($event)" color="light">7</ion-button></ion-col>
-          <ion-col><ion-button (click)="touchDigit($event)" color="light">8</ion-button></ion-col>
-          <ion-col><ion-button (click)="touchDigit($event)" color="light">9</ion-button></ion-col>
-          <ion-col><ion-button>=</ion-button></ion-col>
-      </ion-row>
-      <ion-row>
-          <ion-col></ion-col>
-          <ion-col><ion-button (click)="touchDigit($event)" color="light">4</ion-button></ion-col>
-          <ion-col><ion-button (click)="touchDigit($event)" color="light">5</ion-button></ion-col>
-          <ion-col><ion-button (click)="touchDigit($event)" color="light">6</ion-button></ion-col>
-          <ion-col><ion-button (click)="touchBinOp($event)">-</ion-button></ion-col>
+          <ion-col><ion-button (click)="touchUnOp($event)" color="medium">√</ion-button></ion-col>
+          <ion-col><ion-button (click)="touchDigit($event)" color="dark">7</ion-button></ion-col>
+          <ion-col><ion-button (click)="touchDigit($event)" color="dark">8</ion-button></ion-col>
+          <ion-col><ion-button (click)="touchDigit($event)" color="dark">9</ion-button></ion-col>
+          <ion-col><ion-button color="warning tint">=</ion-button></ion-col>
       </ion-row>
       <ion-row>
           <ion-col></ion-col>
-          <ion-col><ion-button (click)="touchDigit($event)" color="light">1</ion-button></ion-col>
-          <ion-col><ion-button (click)="touchDigit($event)" color="light">2</ion-button></ion-col>
-          <ion-col><ion-button (click)="touchDigit($event)" color="light">3</ion-button></ion-col>
-          <ion-col><ion-button (click)="touchBinOp($event)">+</ion-button></ion-col>
+          <ion-col><ion-button (click)="touchDigit($event)" color="dark">4</ion-button></ion-col>
+          <ion-col><ion-button (click)="touchDigit($event)" color="dark">5</ion-button></ion-col>
+          <ion-col><ion-button (click)="touchDigit($event)" color="dark">6</ion-button></ion-col>
+          <ion-col><ion-button (click)="touchBinOp($event)" color="warning tint">-</ion-button></ion-col>
       </ion-row>
       <ion-row>
           <ion-col></ion-col>
-          <ion-col size="5"><ion-button (click)="touchDigit($event)" color="light">0</ion-button></ion-col>
-          <ion-col><ion-button color="light">,</ion-button></ion-col>
-          <ion-col><ion-button (click)="touchEquals()">=</ion-button></ion-col>
+          <ion-col><ion-button (click)="touchDigit($event)" color="dark">1</ion-button></ion-col>
+          <ion-col><ion-button (click)="touchDigit($event)" color="dark">2</ion-button></ion-col>
+          <ion-col><ion-button (click)="touchDigit($event)" color="dark">3</ion-button></ion-col>
+          <ion-col><ion-button (click)="touchBinOp($event)" color="warning tint">+</ion-button></ion-col>
+      </ion-row>
+      <ion-row>
+          <ion-col></ion-col>
+          <ion-col size="5"><ion-button (click)="touchDigit($event)" color="dark">0</ion-button></ion-col>
+          <ion-col><ion-button color="dark">,</ion-button></ion-col>
+          <ion-col><ion-button (click)="touchEquals()" color="warning tint">=</ion-button></ion-col>
       </ion-row>
   </ion-grid>
 </ion-content>
