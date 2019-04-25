@@ -7,10 +7,10 @@
 </ion-header>
 <style>
   ion-button{
-    width: 60px;
+    width: 100%;
   }
   .display{
-    width: 250px;
+    width: 100%;
     text-align:right; 
     padding:10px;
     background-color: #e0e0e0;
@@ -22,32 +22,44 @@
   }
 </style>
 <ion-content>
-  <div class="ion-padding">
-    <div class="errorMessage" *ngIf="errorMessage">{{errorMessage}}</div>
-    <div class="display">{{displayValue}}</div>
-    <ion-button (click)="allClear()">AC</ion-button>
-    <ion-button (click)="touchUnOp($event)">+/-</ion-button>
-    <ion-button (click)="touchUnOp($event)">%</ion-button>
-    <ion-button (click)="touchBinOp($event)">+</ion-button>
-    <br/>
-    <ion-button (click)="touchDigit($event)" color="light">7</ion-button>
-    <ion-button (click)="touchDigit($event)" color="light">8</ion-button>
-    <ion-button (click)="touchDigit($event)" color="light">9</ion-button>
-    <ion-button>=</ion-button>
-    <br/>
-    <ion-button (click)="touchDigit($event)" color="light">4</ion-button>
-    <ion-button (click)="touchDigit($event)" color="light">5</ion-button>
-    <ion-button (click)="touchDigit($event)" color="light">6</ion-button>
-    <ion-button (click)="touchBinOp($event)">-</ion-button>
-    <br/>
-    <ion-button (click)="touchDigit($event)" color="light">1</ion-button>
-    <ion-button (click)="touchDigit($event)" color="light">2</ion-button>
-    <ion-button (click)="touchDigit($event)" color="light">3</ion-button>
-    <ion-button (click)="touchBinOp($event)">+</ion-button>
-    <br/>
-    <ion-button (click)="touchDigit($event)" style="width:125px;" color="light">0</ion-button>
-    <ion-button color="light">,</ion-button>
-    <ion-button (click)="touchEquals()">=</ion-button>
-    <br/>
-  </div>
+
+  <div class="errorMessage" *ngIf="errorMessage">{{errorMessage}}</div>
+  <div class="display">{{displayValue}}</div>
+
+  <ion-grid>
+      <ion-row>
+          <ion-col><ion-button (click)="touchUnOp($event)">Rand</ion-button></ion-col>
+          <ion-col><ion-button (click)="allClear()">AC</ion-button></ion-col>
+          <ion-col><ion-button (click)="touchUnOp($event)">+/-</ion-button></ion-col>
+          <ion-col><ion-button (click)="touchUnOp($event)">%</ion-button></ion-col>
+          <ion-col><ion-button (click)="touchBinOp($event)">+</ion-button></ion-col>
+      </ion-row>
+      <ion-row>
+          <ion-col></ion-col>
+          <ion-col><ion-button (click)="touchDigit($event)" color="light">7</ion-button></ion-col>
+          <ion-col><ion-button (click)="touchDigit($event)" color="light">8</ion-button></ion-col>
+          <ion-col><ion-button (click)="touchDigit($event)" color="light">9</ion-button></ion-col>
+          <ion-col><ion-button>=</ion-button></ion-col>
+      </ion-row>
+      <ion-row>
+          <ion-col></ion-col>
+          <ion-col><ion-button (click)="touchDigit($event)" color="light">4</ion-button></ion-col>
+          <ion-col><ion-button (click)="touchDigit($event)" color="light">5</ion-button></ion-col>
+          <ion-col><ion-button (click)="touchDigit($event)" color="light">6</ion-button></ion-col>
+          <ion-col><ion-button (click)="touchBinOp($event)">-</ion-button></ion-col>
+      </ion-row>
+      <ion-row>
+          <ion-col></ion-col>
+          <ion-col><ion-button (click)="touchDigit($event)" color="light">1</ion-button></ion-col>
+          <ion-col><ion-button (click)="touchDigit($event)" color="light">2</ion-button></ion-col>
+          <ion-col><ion-button (click)="touchDigit($event)" color="light">3</ion-button></ion-col>
+          <ion-col><ion-button (click)="touchBinOp($event)">+</ion-button></ion-col>
+      </ion-row>
+      <ion-row>
+          <ion-col></ion-col>
+          <ion-col size="5"><ion-button (click)="touchDigit($event)" color="light">0</ion-button></ion-col>
+          <ion-col><ion-button color="light">,</ion-button></ion-col>
+          <ion-col><ion-button (click)="touchEquals()">=</ion-button></ion-col>
+      </ion-row>
+  </ion-grid>
 </ion-content>

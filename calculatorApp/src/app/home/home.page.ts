@@ -41,6 +41,7 @@ export class HomePage {
     switch(this.currentOperand){
       case '%': this.displayValue = (this.currentValue/100).toString();  break;
       case '+/-': this.displayValue = (-1*this.currentValue).toString();  break;
+      case 'Rand': this.displayValue = Math.random().toString(); break;
       default: this.errorMessage = `Onbekende operator $(this.currentOperand)`; break;
     }
   }
